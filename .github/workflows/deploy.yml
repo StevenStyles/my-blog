@@ -4,6 +4,9 @@ on:
   push:
     branches: [ main ]
 
+permissions:
+  contents: write  # 关键！允许action写分支
+  
 jobs:
   deploy:
     runs-on: ubuntu‑latest
